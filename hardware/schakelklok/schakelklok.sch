@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "embedded control "
+Date "2020-09-12"
+Rev "0"
+Comp "Harm Hongerkamp"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1070,17 +1070,6 @@ Wire Wire Line
 	5300 4500 5400 4500
 Wire Wire Line
 	5400 4600 5300 4600
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5F5E2A92
-P 7400 6050
-F 0 "J2" V 7272 6230 50  0000 L CNN
-F 1 "schakeluitgangen" V 7363 6230 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7400 6050 50  0001 C CNN
-F 3 "~" H 7400 6050 50  0001 C CNN
-	1    7400 6050
-	0    1    1    0   
-$EndComp
 Text GLabel 7500 5850 1    50   Input ~ 0
 schakeluitgang_1
 Text GLabel 7400 5850 1    50   Input ~ 0
@@ -1119,4 +1108,42 @@ Wire Wire Line
 	4900 5450 4900 5750
 Wire Wire Line
 	5000 5750 5000 5450
+NoConn ~ 3550 2700
+NoConn ~ 3550 2800
+NoConn ~ 3550 2900
+NoConn ~ 3550 3000
+NoConn ~ 5300 3800
+NoConn ~ 5300 3700
+NoConn ~ 5300 3400
+NoConn ~ 4400 4100
+NoConn ~ 4400 4300
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5F6DA5D6
+P 7300 6050
+F 0 "J2" V 7172 6330 50  0000 L CNN
+F 1 "Conn_01x05" V 7263 6330 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7300 6050 50  0001 C CNN
+F 3 "~" H 7300 6050 50  0001 C CNN
+	1    7300 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F6DBD2F
+P 6950 5850
+F 0 "#PWR01" H 6950 5600 50  0001 C CNN
+F 1 "GND" H 6955 5677 50  0000 C CNN
+F 2 "" H 6950 5850 50  0001 C CNN
+F 3 "" H 6950 5850 50  0001 C CNN
+	1    6950 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5850 6950 5800
+Wire Wire Line
+	6950 5800 7100 5800
+Wire Wire Line
+	7100 5800 7100 5850
+NoConn ~ 21850 6850
 $EndSCHEMATC
