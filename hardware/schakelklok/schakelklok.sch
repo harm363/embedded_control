@@ -1146,4 +1146,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 5800 7100 5850
 NoConn ~ 21850 6850
+NoConn ~ 5300 4700
+NoConn ~ 5300 4800
+NoConn ~ 5300 4900
 $EndSCHEMATC
